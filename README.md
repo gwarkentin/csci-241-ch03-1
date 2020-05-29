@@ -10,23 +10,19 @@ You can copy the following to fill the blanks with your implementations. Please 
 
 ---------------------------------------------------------------------
 TITLE  Chapter 3, Problem 1 (Integer_Expression.asm)
-
 ; Program:     Chapter 3, Problem 1
 ; Description: calculates Res = (A + B) – (C + D), using registers and variables
 ; Student:     James Hope
 ; Date:        02/09/2015
 ; Class:       CSCI 241
 ; Instructor:  Mr. Ding
-
 .386
 .model flat,stdcall
 .stack 4096
 ExitProcess proto,dwExitCode:dword
-
 .data
 ; define DWORD variables: varA, varB, varC, varD, and Res
 ; ... ...
-
 .code
 main1 proc
 ; calculate Res = (A + B) – (C + D)
@@ -34,7 +30,6 @@ main1 proc
    ; calculate (A + B) – (C + D)
    ; ... ...
    ; save the result in Res
-
    invoke ExitProcess,0
 main1 endp
 end main1
